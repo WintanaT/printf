@@ -1,4 +1,6 @@
 #ifndef _MAIN_H_
+#ifndef _HOLBERTON_H_
+#define _HOLBERTON_H_
 #define _MAIN_H_
 
 #include <stdarg.h>
@@ -60,11 +62,21 @@ char *fill_long_oct_array(char *bnr, char *oct);
 char *fill_short_oct_array(char *bnr, char *oct);
 char *fill_hex_array(char *bnr, char *hex, int isupp, int limit);
 
-int print_i(va_list i);
-int print_d(va_list d);
+int _putchar(char c);
+int _printf(const char *format, ...);
 int print_c(va_list c);
 int print_s(va_list s);
-
+int print_i(va_list i);
+int print_d(va_list d);
+int print_u(va_list u);
+int print_b(va_list b);
+int print_o(va_list o);
+int print_x(va_list x);
+int print_X(va_list X);
+int print_p(va_list p);
 int print_S(va_list S);
 int print_r(va_list r);
+int print_R(va_list R);
+
+#endif  /* _HOLBERTON_H */
 #endif
